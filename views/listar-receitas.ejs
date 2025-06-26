@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Receitas</title>
+</head>
+<body>
+    <h1>Essa é uma página de lista de receitas.</h1>
+
+    <ul>
+        <% receitas.forEach(receita => { %>
+            <li>
+                <h2>Nome da comida:</h2><%= receita.nome %>
+                <br>
+                <h3>Ingredientes:</h3><%= receita.ingredientes %>
+                <br>
+                <h3>Modo de preparo:</h3><%= receita.modo_preparo %>
+                <br>
+                <br>
+            </li>
+        <% }) %>
+        
+    </ul>
+</body>
+</html>
